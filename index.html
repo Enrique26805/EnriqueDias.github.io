@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enrique Dias - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0a0a;
+      color: #fff;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem;
+      z-index: 1000;
+    }
+    nav a {
+      margin-left: 2rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ccc;
+    }
+    header {
+      background-image: url("images/anas-alshanti-feXpdV001o4-unsplash.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 2rem;
+    }
+    header h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      color: white;
+      text-shadow: 0 0 10px black;
+    }
+    header p {
+      font-size: 1.25rem;
+      color: #ccc;
+    }
+    .hero-buttons a {
+      margin: 0 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 25px;
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+    .hero-buttons a:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+    section {
+      padding: 5rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    section:nth-child(even) {
+      background-color: #111;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 2.5rem;
+    }
+    .quote {
+      font-weight: bold;
+      font-style: italic;
+      color: #f39c12;
+      margin-top: 1rem;
+    }
+    footer {
+      background-color: #111;
+      color: #ccc;
+      padding: 2rem;
+      text-align: center;
+    }
+    .contact-btns a {
+      margin: 0.5rem;
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border-radius: 25px;
+      text-decoration: none;
+      color: white;
+      background-color: #222;
+      transition: background-color 0.3s;
+    }
+    .contact-btns a:hover {
+      background-color: #444;
+    }
+    .certificates a {
+  display: inline-block;
+  margin: 8px 10px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid #00bfff;
+  text-decoration: none;
+  color: #00bfff;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+.certificates a:hover {
+  background-color: #00bfff;
+  color: #000;
+}
+#projects {
+  background-color: #111;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #1a1a1a;
+  border-radius: 15px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 150, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+.project-card h3 {
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.project-card ul {
+  text-align: left;
+  padding-left: 20px;
+  font-size: 0.9rem;
+}
+<style>
+  #typewriter-container {
+    font-size: 1.5rem;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #00ffcc;
+    width: fit-content;
+    margin-top: 1rem;
+  }
+</style>
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Enrique Dias</h1>
+    <p>Innovator • Coder • Problem Solver</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Curiosity has been the fire behind everything I’ve built or explored. As a child, I was always fascinated by the question — <span class="quote">“How is this made?”</span><br><br>
+      My parents have always been my biggest inspiration. They never boxed me into binary choices but encouraged me to explore the grey — like combining hardware and coding. This led me to discover my passion for embedded systems and Edge AI.<br><br>
+      I've mastered microcontrollers like the C8051 (both in Embedded C and Assembly) and recently got certified in MATLAB and Simulink. My recent projects — like a deep learning–based fruit detection system using YOLO and ResNet, an ISL-to-English translator using computer vision, and smart automation solutions like a plant watering and garbage monitoring system — reflect my drive to build real-world, intelligent systems that blend hardware with AI.<br><br>
+      <span class="quote">“Chaos isn't a pit. Chaos is a ladder.” – Littlefinger</span><br>
+      <span class="quote">“I’ve seen chaos — and I built my ladder through it.”</span>
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+  
+      <!-- Smart Plant Watering System -->
+      <div class="project-card">
+        <img src="images/Automated_Watering.jpg" alt="Smart Plant Watering System" />
+        <h3>🌱 Smart Plant Watering System</h3>
+        <p>A system that automatically waters plants based on soil conditions, built using an Arduino Uno.</p>
+        <ul>
+          <li>Uses a soil moisture sensor to check if the soil is dry.</li>
+          <li>Activates a water pump via relay if moisture is low.</li>
+          <li>Simple, reliable, and ideal for home automation.</li>
+          <li><strong>Application:</strong> Great for busy or elderly plant lovers.</li>
+        </ul>
+      </div>
+  
+      <!-- Garbage Monitoring & Separating System -->
+      <div class="project-card">
+        <img src="images/garbage_monitoring.jpg" alt="Garbage Monitoring and Separating System">
+        <h3>🗑️ Garbage Monitoring & Separating System</h3>
+        <p>An intelligent system for smart waste management using ESP8266.</p>
+        <ul>
+          <li>Weight & level sensors check bin status.</li>
+          <li>Sends Wi-Fi alerts when thresholds are reached.</li>
+          <li>Optional sorting logic for biodegradable waste.</li>
+          <li><strong>Application:</strong> Perfect for public smart bins and city sanitation.</li>
+        </ul>
+      </div>
+  
+      <!-- ISL to English Translator -->
+      <div class="project-card">
+        <img src="images/hand_gesture.jpg" alt="ISL to English Translator">
+        <h3>🧏‍♂️ ISL-to-English Translator Using Computer Vision</h3>
+        <p>Real-time translator for Indian Sign Language to English using computer vision and ML.</p>
+        <ul>
+          <li>Camera captures hand signs and gestures.</li>
+          <li>ML model (CNN) classifies gestures.</li>
+          <li>Outputs English words or phrases with potential for TTS.</li>
+          <li><strong>Application:</strong> Helps bridge communication for the deaf and hard of hearing.</li>
+        </ul>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certificates">
+      <a href="certificate MatLab.pdf" target="_blank">MATLAB Onramp</a>
+      <a href="certificate signalind_onramp.pdf" target="_blank">Simulink Onramp</a>
+      <a href="ENRIQUE-DIAS-Participant-Certificate (1) IIT-BOMBAY Spoken tutorial.pdf" target="_blank">iPython</a>
+      <a href="Critical.pdf" target="_blank">Critical Thinking</a>
+      <a href="ENRIQUE-DIAS-Participant-Certificate (3).pdf" target="_blank">Arduino</a>
+      <!--<a href="Personal financing.pdf" target="_blank">Personal Financing</a>
+      <a href="Social.pdf" target="_blank">Social Learning</a>
+      <a href="Substainable.pdf" target="_blank">Sustainable Development</a>-->
+    </div>
+  </section>
+  
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <!--<li>Led a social service team for village children</li>
+      <li>Played Football at State-level</li>-->
+      <li>My Girlfriend <3 </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: enriquedias26805@gmail.com<br>
+    Alternate Email: enrique.dias@mitwpu.edu.in<br>
+    Phone: 9819342749<br>
+    Address: Varca, Salcete, Goa.</p>
+
+    <div class="contact-btns">
+      <a href="https://www.instagram.com/enrique.dias_/?hl=en" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Enrique Dias. All rights reserved.</p>
+  </footer>
+  <script>
+    const quotes = [
+      '"Chaos is what makes stars explode and minds shine."',
+      '"How you perceive the world shapes how you build in it."'
+    ];
+  
+    let quoteIndex = 0;
+    let charIndex = 0;
+    const speed = 60;
+    const pauseTime = 2000;
+    const target = document.getElementById("typewriter-text");
+  
+    function type() {
+      if (charIndex < quotes[quoteIndex].length) {
+        target.textContent += quotes[quoteIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, speed);
+      } else {
+        setTimeout(erase, pauseTime);
+      }
+    }
+  
+    function erase() {
+      if (charIndex > 0) {
+        target.textContent = quotes[quoteIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, speed / 2);
+      } else {
+        quoteIndex = (quoteIndex + 1) % quotes.length;
+        setTimeout(type, speed);
+      }
+    }
+  
+    document.addEventListener("DOMContentLoaded", type);
+  </script>
+  
+</body>
+</html>
